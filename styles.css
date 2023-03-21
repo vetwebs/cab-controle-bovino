@@ -9,32 +9,41 @@
     font-family: Inter-Bold;
     src: url(fonte/Inter-SemiBold.ttf);
 }
+body{
+    background-color: rgba(196, 193, 189, 0.466);
+}
 /********container cabeçalho********/
 .cabeçalho__container{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: start;
     background: linear-gradient(rgb(241, 236, 236), rgba(139, 138, 138, 0.671));
     margin: auto;
+    
 }
 .cabeçalho-1-1{
     display: flex;
     align-items: center;
     margin: -24px;
+    margin-left: 10px;
 }
 .cabeçalho-1-1 p{
-    font-family: Inter-Regular;
+    font-family: Inter-Regular; 
     margin: 5px;
     padding: 5px 50px 5px 10px;
    
 }
+.cabeçalho__container .navegação-menu-mobile{
+    display: flex;}
 
 /*************Navegação****************/
 .nav-list{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
+    background: linear-gradient(rgba(139, 138, 138, 0.671),rgb(241, 236, 236));
+    display: inline-block;
+    flex-direction: column;
+    height: 100%;
+    position: fixed;
+    
     
 }
 .nav-list a{
@@ -45,6 +54,9 @@
 
 }
 /***************Divisões*****************/
+.div-1, .div-2, .div-3{
+    padding-bottom: 20px;
+}
 .div-1-1, .div-2-1,.div-3-1{
     display: flex;
     align-items: center;
@@ -52,15 +64,29 @@
     box-shadow: 1px 4px rgb(248, 247, 247);
     border-radius: 10px;
     padding: 5px;
-    margin: 30px;
+    
+   
 }
 .div-1-1:hover,.div-2-1:hover,.div-3-1:hover{
     box-shadow: 1px 4px rgb(15, 151, 22);
   
 }
-/************Subdivisões div1***************/
+/************Subdivisões div1 Manejo***************/
 .sub-menu-div-1{
-    margin-left: 20px;
+    display: flex;
+    margin-left: 9.3em;
+    margin-top: -10px;
+    padding: 20px;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    
+   
+ }
+ .sub-menu-div-1 a:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    
  }
 .div-1 ul{
    display: none;
@@ -77,11 +103,7 @@
     border-radius: 10px;
     
 }
-.sub-menu-div-1 a:hover{
-   background-color: rgb(255, 255, 255);
-   border-radius: 5px;
-   
-}
+
 .div-1:hover ul li{
     padding: 10px;
     text-align: center;
@@ -94,9 +116,15 @@
      list-style-type: none;
      
  }
- /************Centralizar a subdivisões div 2***********/
+ /************Centralizar a subdivisões div 2 Resumo***********/
  .sub-menu-div-2{
-    margin-left: 40px;
+    display: flex;
+    margin-left: 9.3em;
+    margin-top: -10px;
+    padding: 20px;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
  }
  .div-2:hover .sub-menu-div-2 ul{
      display: block;
@@ -117,9 +145,15 @@
      text-align: center;
  
  }
- /*********Subdivisões div3*************/
+ /*********Subdivisões div3 Cadastro*************/
  .sub-menu-div-3{
-    margin-left: 20px;
+    display: flex;
+    margin-left: 9.3em;
+    margin-top: auto;
+    padding: 20px;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
  }
 .div-3 ul{
     display: none;
@@ -150,10 +184,10 @@
  /*************Navegação - Mobile****************/
 /******ESTILIZAÇÃO DA NAVEGAÇÃO DO MOBILE****/
 .navegação-menu-mobile{
-    display: none;
+    display: flex;
 }
 .navegação-menu-mobile{
-    background-color: rgba(98, 129, 84, 0.267);
+    background: linear-gradient(rgba(139, 138, 138, 0.671),rgb(241, 236, 236));
     height: 0;
     width: 36vh;
     display: flex;
@@ -162,8 +196,7 @@
     visibility: hidden;
     transition: 0.6s;
     overflow: hidden;
-     
-
+    
 }
 .navegação-menu-mobile a{
     text-decoration: none;
@@ -298,7 +331,7 @@
     margin: 2em 10px 0 0;
     
  }
- 
+                                                          
  .linha{
     width: 30px;
     height: 3px;
