@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Inter-Regular;
+    src: url(fonte/Inter-Regular.ttf);
+}
+body{
+    font-family: Inter-Regular;
+}
+/*Nome Cadastro*/
+h1, h2{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+    color: #14580a;
+
+}
+input{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid rgba(163, 155, 155, 0.212);
+    background-color: #e4dede96;
+    border-radius: 8px;
+    color: rgb(73, 177, 12) ;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+input:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+option{
+    font-weight: bold;
+    font-size: 15px;
+}
+.ls-field-lg{
+    border: 1px solid rgba(163, 155, 155, 0.212);
+    background-color: #d8d3d3;
+    padding: 5px;
+    font-family: Inter-Regular;
+    font-weight: bold;
+    border-radius: 10px;
+}
+label{
+    font-weight: bold;
+}
+
+/*Divisão cadastro 1*/
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1px solid rgb(233, 225, 225);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0ecec;
+    margin-left: 25%;
+    margin-right: 20%;
+}
+div, select{
+    text-align: center;
+    
+}
+/*Pesos*/
+.pesos__container{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1px solid rgb(233, 225, 225);
+    border-radius: 10px;
+    background-color: #f0ecec;;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 25%;
+    margin-right: 20%;
+
+}
+
+/*Filiação*/
+.filiação__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1px solid rgb(233, 225, 225);
+    border-radius: 10px;
+    background-color: #f0ecec;;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 25%;
+    margin-right: 20%;
+
+
+}
+.filiação_pai_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1px solid rgb(233, 225, 225);
+    border-radius: 10px;
+    background-color: #f0ecec;;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 25%;
+    margin-right: 20%;
+
+}
+/*Botões*/
+.botões{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+}
+.botões button{
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-family: Inter-Regular;
+    border: 1px solid rgb(233, 225, 225);
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.salvar{
+    background-color: #E8A524;
+    margin: 5px 20px;
+}
+.voltar{
+    background-color: #4FCF3B;
+    margin: 5px 20px;
+
+}
+/********Configurações Mobile****/
+@media screen and (max-width: 1000px) {
+    main, .pesos__container{
+        justify-content: center;
+        text-align: center;
+        margin-left: 2%;
+        margin-right: 2%;
+
+    }
+    .filiação__container,.filiação_pai_container,.nome-filiação {
+        display: none;
+    }
+    .ls-field-lg{
+        margin: 2px;
+    }
+    option{
+        font-weight: bold;
+        font-size: 9px;
+    }
+}
