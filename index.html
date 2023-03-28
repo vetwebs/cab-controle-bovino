@@ -135,16 +135,16 @@
                     <label for="nome-animal">Nome</label>
                     <input type="text">
                     <label for="categoria">Categoria</label>
-                    <select name="categoria" class="ls-field-lg">
-                        <option value="sim">Vaca</option>
-                        <option value="nao">Boi</option>
-                        <option value="nao">Bezerro</option>
-                        <option value="nao">Bezerra</option>
-                        <option value="nao">Garrote</option>
-                        <option value="nao">Novilha</option>
+                    <select name="categoria" class="ls-field-lg" id="categorias">
+                        <option value="vaca">Vaca</option>
+                        <option value="boi">Boi</option>
+                        <option value="bezerro">Bezerro</option>
+                        <option value="bezerra">Bezerra</option>
+                        <option value="garrote">Garrote</option>
+                        <option value="novilha">Novilha</option>
                     </select>
                     </div>
-                    
+<!------------------------Raça---------->
                     <div>
                         <label>Raça</label>
                         <select name="Raça" class="ls-field-lg">
@@ -167,34 +167,35 @@
                             <option value="nao">Senepol</option>
                         </select>
                     </div>
+<!----------------------------Sexo---->
                         <div>
-                            <input type="checkbox" placeholder="Sexo" >
-                            <label for="macho">M</label>
-                            <input type="checkbox" placeholder="Sexo">
-                            <label for="femea">F</label>
-                        </div>
-                        
-                
+                            <select name="sexo" class="ls-field-lg" id="sexo">
+                                <option value="femea" selected >Femea</option>
+                                <option value="macho">Macho</option>     
+                        </div>            
+<!--------------------------Nº do animal---> 
                         <div class="n-animal">
-                            <label>Nº do animal</label>
-                            <input type="text">
+                            <input type="text" placeholder="Nº do animal">
                       </div>
-                    
-                    
-
+<!---------------------------Escore------->
+                      <div>
                         <label>Escore</label>
                         <select name="escore" class="ls-field-lg">
                             <option value="sim">1</option>
                             <option value="nao">2</option>
                             <option value="nao">3</option>
                         </select>
+                    </div>
+<!----------------------------Meses-->
                         <div>
                             <label>Meses</label>
                             <input type="number">
                          </div>
-                        
-                    <label>Lote</label>
-                    <input type="text">
+<!----------------------------Lote-->
+                        <div>
+                            <label>Lote</label>
+                            <input type="text">
+                         </div>
                 </form>
             </div>      
     </main>
@@ -229,8 +230,7 @@
         <label for="mãe">Meses</label>
         <input type="number">
 
-        <label for="nº do animal">Nº do animal</label>
-        <input type="text">
+        <input type="text" placeholder="Nº do animal">
     
         <label>Raça</label>
         <select name="Raça" class="ls-field-lg">
@@ -266,8 +266,8 @@
         <label for="pai">Meses</label>
         <input type="number">
 
-        <label for="nº do animal">Nº do animal</label>
-        <input type="text">
+      
+        <input type="text" placeholder="Nº do animal">
     
         <label>Raça</label>
         <select name="Raça" class="ls-field-lg">
@@ -300,5 +300,6 @@
 </div>
 
     <script src="cabeçalho.js"></script>
+    <script src="cadastro.js"></script>
 </body>
 </html>
