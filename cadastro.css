@@ -140,6 +140,36 @@ div, select{
     margin: 5px 20px;
 
 }
+/*Informações Adicionais*/
+/***********Botão*/
+.botão_informações-adicionais input{
+    display: none;
+    margin-left: 25%;
+    padding: 8px;
+    border-radius: 10px;
+    font-family: Inter-Regular;
+    font-weight: bold;
+    background-color: #96b491;
+    border: 1px solid rgb(233, 225, 225);
+    cursor: pointer;
+    color: black;
+}
+.botão_informações-adicionais input:hover{
+    background-color: rgb(199, 190, 190);
+}
+
+/***********Divisão*/
+.divisão_informações-container{
+    display: flex;
+    border: 1px solid rgb(233, 225, 225);
+    border-radius: 10px;
+    background-color: #f0ecec;;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 25%;
+    margin-right: 20%;
+}
+
 /********Configurações Mobile****/
 @media screen and (max-width: 1000px) {
     main, .pesos__container{
@@ -151,6 +181,7 @@ div, select{
     }
     .filiação__container,.filiação_pai_container,.nome-filiação {
         display: none;
+
     }
     .ls-field-lg{
         margin: 2px;
@@ -159,4 +190,18 @@ div, select{
         font-weight: bold;
         font-size: 9px;
     }
+    .botão_informações-adicionais input{
+        display: flex;
+        margin-left: 2%;}
+
+    .divisão_informações-container{
+        display: none;
+        justify-content: center;
+        text-align: center;
+        margin-left: 2%;
+        margin-right: 2%;
+
+    }
+
+
 }
