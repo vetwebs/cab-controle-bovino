@@ -27,7 +27,6 @@
         <span class="linha"></span>
     </button>
     </header> 
-    
     <nav>
         <div class="nav-list">
             <div class="div-1">
@@ -125,7 +124,6 @@
             </div>
         </div>
     </nav>
-
     <h1>Cadastro</h1>
     <main>
         <!--------------Divisão cadastro 1--------------->
@@ -142,10 +140,8 @@
                         <option value="bezerra">Bezerra</option>
                         <option value="garrote">Garrote</option>
                         <option value="novilha">Novilha</option>
-                    </select>
-                    </div>
-<!------------------------Raça---------->
-                    <div>
+                    </select>            
+<!------------------------Raça---------->                   
                         <label>Raça</label>
                         <select name="Raça" class="ls-field-lg">
                             <option value="sim">Angus</option>
@@ -165,37 +161,28 @@
                             <option value="nao">Sindi</option>
                             <option value="nao">Girolando</option>
                             <option value="nao">Senepol</option>
-                        </select>
-                    </div>
-<!----------------------------Sexo---->
-                        <div>
+                        </select> 
+<!----------------------------Sexo---->  
                             <select name="sexo" class="ls-field-lg" id="sexo">
                                 <option value="femea" selected >Femea</option>
-                                <option value="macho">Macho</option>     
-                        </div>            
+                                <option value="macho">Macho</option>                      
 <!--------------------------Nº do animal---> 
-                        <div class="n-animal">
-                            <input type="text" placeholder="Nº do animal">
-                      </div>
+                              <input type="text" placeholder="Nº do animal">
 <!---------------------------Escore------->
-                      <div>
                         <label>Escore</label>
                         <select name="escore" class="ls-field-lg">
                             <option value="sim">1</option>
                             <option value="nao">2</option>
                             <option value="nao">3</option>
                         </select>
-                    </div>
 <!----------------------------Meses-->
-                        <div>
                             <label>Meses</label>
-                            <input type="number">
-                         </div>
-<!----------------------------Lote-->
-                        <div>
+                            <input type="number" class="number">          
+<!--------------------------Lote-->
+                            <div>
                             <label>Lote</label>
                             <input type="text">
-                         </div>
+                        </div>     
                 </form>
             </div>      
     </main>
@@ -208,7 +195,6 @@
             <input type="date" placeholder="Data">
         </div>
     </div>
-
     <div>
         <h2>Peso Final</h2>
         <div>
@@ -239,7 +225,6 @@
             </form>
         </div>
     </div>
-
 </section>
 <!----------FINAL Informações Adicionais---------->
 <div class="nome-filiação">
@@ -251,12 +236,9 @@
     <div>
         <label for="mãe">Mãe</label>
         <input type="text">
-
         <label for="mãe">Meses</label>
         <input type="number">
-
         <input type="text" placeholder="Nº do animal">
-    
         <label>Raça</label>
         <select name="Raça" class="ls-field-lg">
             <option value="sim">Angus</option>
@@ -279,7 +261,6 @@
         </select>
         <label>Lote</label>
         <input type="text">
-
 </section>
 <!-----------Filiação------------->
 <section class="filiação_pai_container">
@@ -287,13 +268,9 @@
     <div>
         <label for="pai">Pai</label>
         <input type="text">
-
         <label for="pai">Meses</label>
         <input type="number">
-
-      
         <input type="text" placeholder="Nº do animal">
-    
         <label>Raça</label>
         <select name="Raça" class="ls-field-lg">
             <option value="sim">Angus</option>
@@ -316,15 +293,12 @@
         </select>
         <label>Lote</label>
         <input type="text">
-
 </section>
-
 <!---------Botões Finais------------->
 <div class="botões">
     <button href="#" class="salvar">Salvar e Novo animal</button>
     <button href="#" class="voltar">Salvar e Voltar</button>
 </div>
-
     <script src="cabeçalho.js"></script>
     <script src="cadastro.js"></script>
 </body>

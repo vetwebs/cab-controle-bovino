@@ -67,6 +67,9 @@ div, select{
     text-align: center;
     
 }
+.number{
+    width: 50px;
+}
 /*Pesos*/
 .pesos__container{
     justify-content: center;
