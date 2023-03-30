@@ -23,7 +23,7 @@ input{
     border: 1px solid rgba(163, 155, 155, 0.212);
     background-color: #e4dede96;
     border-radius: 8px;
-    color: rgb(73, 177, 12) ;
+    color: rgb(0, 0, 0) ;
     font-size: 15px;
     font-weight: bold;
     
@@ -70,6 +70,8 @@ div, select{
 .number{
     width: 50px;
 }
+/*ID PRENHEZ*/
+
 /*Pesos*/
 .pesos__container{
     justify-content: center;
