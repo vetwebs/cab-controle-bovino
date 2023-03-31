@@ -1,0 +1,13 @@
+*{margin: 0; padding: 0;}
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url(../fonte/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: Inter-Bold;
+    src: url(../fonte/Inter-SemiBold.ttf);
+}
+body{
+    
+}
