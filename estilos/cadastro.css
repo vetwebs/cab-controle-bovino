@@ -121,28 +121,50 @@ div, select{
 /*Botões*/
 .botões{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
    
 
 }
 .botões button{
-    margin: 10px;
+    margin: 10px 25px;
     padding: 5px 10px;
     font-size: 18px;
     font-family: Inter-Regular;
-    border: 1px solid rgb(233, 225, 225);
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
 }
 .salvar{
     background-color: #E8A524;
+    border: 1px solid #E8A524;
     margin: 5px 20px;
 }
+.salvar:hover{
+    background-color: #e9b75b;
+    border: 1px solid #e9b75b;
+
+}
 .voltar{
-    background-color: #4FCF3B;
+    background-color: #54c241;
+    border: 1px solid #4FCF3B;
     margin: 5px 20px;
+
+}
+.voltar:hover{
+    background-color: #3a972c;
+    border: 1px solid #3a972c;
+
+}
+.resumo{
+    background-color: #698ccc;
+    border: 1px solid #698ccc;
+    margin: 5px 20px;
+}
+.resumo:hover{
+    background-color: #38558a;
+    border: 1px solid #38558a;
 
 }
 /*Informações Adicionais*/
@@ -207,6 +229,11 @@ div, select{
         margin-right: 2%;
 
     }
-
+    .botões{
+        flex-direction: column;
+        
+       
+    
+    }
 
 }
