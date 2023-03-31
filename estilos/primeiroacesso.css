@@ -1,0 +1,59 @@
+:root{
+    --fonte-princiapl: Roboto;
+
+
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fontes/Roboto-Regular.ttf);
+}
+
+body{
+    background: linear-gradient(rgb(22, 70, 12), rgba(151, 245, 127, 0.562) 80%, rgb(105, 100, 100));
+    margin: 0 auto;
+    padding:0px;
+    
+}
+/*Logo*/
+.principal__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.principal__container img{
+    margin: 5em;
+
+}
+
+/*Botões*/
+.principal__container button{
+    background-color: #000000;
+    border: 1px solid #CFF2BF;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    
+}
+.principal__container button:hover{
+    background-color:rgb(26, 90, 10);
+    color: #000000;
+    transition: 0.9s;
+
+}
+
+.principal__container button a{
+    text-decoration: none;
+    font-family: var(--fonte-princiapl);
+    color: rgb(250, 250, 250);
+    font-size: 20px;
+    font-weight: 700;
+}
+.botões-nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5.5em;
+}
+
+

@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --fonte-princiapl: Roboto;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonte/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Inter;
+    src: url(../fonte/Inter-Regular.ttf);
+}
+body{
+    font-family: Inter;
+    background-color:#f0ecec;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+
+}
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+ 
+}
+form{
+   
+    box-shadow: 10px  8px 5px rgba(0, 0, 0, 0.082);
+    border-radius: 10px;
+    margin: px;
+    padding: 60px;
+    font-size: 20px;
+    
+
+}
+label{
+    font-weight: bold;
+   
+}
+input{
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(197, 188, 188);
+    color: rgb(18, 65, 14);
+    font-size: 15px;
+    
+    
+
+}
+input:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+/*Botão salvar login*/
+.botão-salvar-login{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+.botão-salvar-login button{
+    padding: 10px 35px;
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: bold;
+    background-color: #000000;
+    border: 1px solid #CFF2BF;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.botão-salvar-login button:hover{
+    background-color:rgb(26, 90, 10);
+    transition: 0.2s;
+}
+.botão-salvar-login button a{
+    text-decoration: none;
+    color: white;
+}
+
+

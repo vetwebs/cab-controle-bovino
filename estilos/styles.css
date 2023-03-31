@@ -1,0 +1,396 @@
+
+*{margin: 0; padding: 0;}
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url(../fonte/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: Inter-Bold;
+    src: url(../fonte/Inter-SemiBold.ttf);
+}
+body{
+    background: linear-gradient(rgba(142, 163, 132, 0.445), rgb(186, 207, 175));
+}
+/********container cabeçalho********/
+.cabeçalho__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background: linear-gradient(rgb(241, 236, 236), rgba(139, 138, 138, 0.671));
+    margin: auto;
+    box-shadow: 10px  8px 5px rgba(10, 156, 71, 0.103);
+    
+}
+.cabeçalho-1-1{
+    display: flex;
+    align-items: center;
+    margin: -24px;
+    margin-left: 10px;
+}
+.cabeçalho-1-1 p{
+    font-family: Inter-Regular; 
+    margin: 5px;
+    padding: 5px 50px 5px 10px;
+   
+}
+.cabeçalho__container .navegação-menu-mobile{
+    display: flex;}
+
+/*************Navegação****************/
+.nav-list{
+    
+    box-shadow: 10px  8px 5px rgba(0, 0, 0, 0.11);
+    display: inline-block;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 0.5em;
+    position: fixed;
+    border-radius: 20px;
+    
+    
+}
+.nav-list a{
+    text-decoration: none;
+    font-family: Inter-Bold;
+    padding: 5px;
+    color: black;
+
+}
+/***************Divisões*****************/
+.div-1, .div-2, .div-3{
+    padding-bottom: 20px;
+}
+.div-1-1, .div-2-1,.div-3-1{
+    display: flex;
+    align-items: center;
+    margin: 2em;
+    box-shadow: 1px 4px rgb(248, 247, 247);
+    border-radius: 10px;
+    padding: 5px;
+    
+   
+}
+.div-1-1:hover,.div-2-1:hover,.div-3-1:hover{
+    box-shadow: 1px 4px rgb(15, 151, 22);
+  
+}
+/************Subdivisões div1 Manejo***************/
+.sub-menu-div-1{
+    display: flex;
+    margin-left: 9.3em;
+    margin-top: -10px;
+    padding: 20px;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    
+   
+ }
+ .sub-menu-div-1 a:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    
+ }
+.div-1 ul{
+   display: none;
+    position: relative;
+    list-style-type: none;
+    
+}
+.div-1:hover .sub-menu-div-1 ul{
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    background: linear-gradient(rgb(139, 136, 136), rgb(226, 222, 222));
+    border-radius: 10px;
+    
+}
+
+.div-1:hover ul li{
+    padding: 10px;
+    text-align: center;
+
+}
+/****************Subdivisões div2**************/
+.div-2 ul{
+    display: none;
+     position: relative;
+     list-style-type: none;
+     
+ }
+ /************Centralizar a subdivisões div 2 Resumo***********/
+ .sub-menu-div-2{
+    display: flex;
+    margin-left: 9.3em;
+    margin-top: -10px;
+    padding: 20px;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+ }
+ .div-2:hover .sub-menu-div-2 ul{
+     display: block;
+     justify-content: center;
+     flex-direction: column;
+     position: absolute;
+     background: linear-gradient(rgb(139, 136, 136), rgb(226, 222, 222));
+     border-radius: 10px;
+     
+ }
+ .sub-menu-div-2 a:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    
+ }
+ .div-2:hover ul li{
+     padding: 10px;
+     text-align: center;
+ 
+ }
+ /*********Subdivisões div3 Cadastro*************/
+ .sub-menu-div-3{
+    display: flex;
+    margin-left: 9.3em;
+    margin-top: auto;
+    padding: 20px;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+ }
+.div-3 ul{
+    display: none;
+     position: relative;
+     list-style-type: none;
+     
+ }
+ .div-3:hover .sub-menu-div-3 ul{
+     display: block;
+     justify-content: center;
+     flex-direction: column;
+     position: absolute;
+     background: linear-gradient(rgb(139, 136, 136), rgb(226, 222, 222));
+     border-radius: 10px;
+     
+ }
+ .sub-menu-div-3 a:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    
+ }
+ .div-3:hover ul li{
+     padding: 10px;
+     text-align: center;
+ 
+ }
+ /******Configuração do Menu - Mobile****/
+ /*************Navegação - Mobile****************/
+/******ESTILIZAÇÃO DA NAVEGAÇÃO DO MOBILE****/
+.navegação-menu-mobile{
+    display: flex;
+}
+.navegação-menu-mobile{
+    background: linear-gradient(rgba(139, 138, 138, 0.671),rgb(241, 236, 236));
+    height: 0;
+    width: 45vh;
+    display: flex;
+    justify-content: start;
+    font-family: Inter-Regular;
+    visibility: hidden;
+    transition: 0.6s;
+    overflow: hidden;
+    background: rgb(166, 199, 171);
+    box-shadow: 10px  8px 5px rgba(0, 0, 0, 0.055);
+    border-radius: 15px;
+    position: fixed;
+    
+}
+.navegação-menu-mobile a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+
+}
+/***************Divisões*****************/
+.div-1-1-mobile, .div-2-1-mobile,.div-3-1-mobile{
+    display: flex;
+    align-items: center;
+    margin: 2em;
+    padding: 8px;
+    box-shadow: 1px 4px rgb(255, 255, 255);
+    border-radius: 10px;
+    
+}
+.div-1-1-mobile:hover,.div-2-1-mobile:hover,.div-3-1-mobile:hover{
+    box-shadow: 1px 4px rgb(15, 151, 22);
+  
+}
+/************Subdivisões div1***************/
+.sub-menu-div-1-mobile{
+    margin-left: 20px;
+ }
+.div-1-mobile ul{
+   display: none;
+    position: relative;
+    list-style-type: none;
+    
+}
+.div-1-mobile:hover .sub-menu-div-1-mobile ul{
+    display: flex;
+    margin-left: 8.3em;
+    margin-top: -4.3em;
+    padding: 10px;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    background: linear-gradient(rgb(139, 136, 136), rgb(226, 222, 222));
+    border-radius: 10px;
+    
+}
+.sub-menu-div-1-mobile a:hover{
+     padding: 3px;
+   background-color: rgb(255, 255, 255);
+   border-radius: 5px;
+   
+}
+.div-1-mobile:hover ul li{
+    padding: 3px;
+    padding: 10px;
+    text-align: center;
+
+}
+/****************Subdivisões div2**************/
+.div-2-mobile ul{
+    display: none;
+     position: relative;
+     list-style-type: none;
+     
+ }
+ /************Centralizar a subdivisões div 2***********/
+ .sub-menu-div-2-mobile{
+    margin-left: 40px;
+ }
+ .div-2-mobile:hover .sub-menu-div-2-mobile ul{
+    display: flex;
+    margin-left: 7em;
+    margin-top: -4.3em;
+    padding: 10px;
+     justify-content: center;
+     flex-direction: column;
+     position: absolute;
+     background: linear-gradient(rgb(139, 136, 136), rgb(226, 222, 222));
+     border-radius: 10px;
+     
+ }
+ .sub-menu-div-2-mobile a:hover{
+    padding: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    
+ }
+ .div-2-mobile:hover ul li{
+     padding: 10px;
+     text-align: center;
+ 
+ }
+ /*********Subdivisões div3*************/
+ .sub-menu-div-3-mobile{
+    margin-left: 20px;
+ }
+.div-3-mobile ul{
+    display: none;
+     position: relative;
+     list-style-type: none;
+     
+ }
+ .div-3-mobile:hover .sub-menu-div-3-mobile ul{
+    display: flex;
+    margin-left: 8.2em;
+    margin-top: -4.3em;
+    padding: 10px;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    background: linear-gradient(rgb(139, 136, 136), rgb(226, 222, 222));
+     border-radius: 10px;
+     
+ }
+ .sub-menu-div-3-mobile a:hover{
+    padding: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    
+ }
+ .div-3-mobile:hover ul li{
+     padding: 10px;
+     text-align: center;
+ 
+ }
+ /**********Botão***********/
+ #btn-menu{
+    display: none;
+ }
+ #btn-menu{
+    width: 50px;
+    height: 30px;
+    border: transparent;
+    background-color: transparent;
+    margin: 2em 10px 0 0;
+    
+ }
+                                                          
+ .linha{
+    width: 30px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    display: block;
+    margin: 5px auto;
+    position: relative;
+    transform-origin: center;
+    cursor: pointer;
+ }
+ #btn-menu.ativar .linha:nth-child(1){
+    transform: translateY(8px) rotate(-45deg);
+    background-color: rgb(72, 73, 72);
+    transition: 0.1s;
+ }
+ #btn-menu.ativar .linha:nth-child(3){
+    transform: translateY(-7px) rotate(45deg);
+    background-color: rgb(72, 73, 72);
+    transition: 0.1s;
+ }
+ #btn-menu.ativar .linha:nth-child(2){
+    opacity: 0;
+ }
+ 
+@media screen and (max-width: 1000px) {
+    .nav-list{
+        display: none;
+    }
+    #btn-menu{
+        display: block;
+     }
+    .cabeçalho__container .navegação-menu-mobile{
+    display: flex;
+   
+}
+.navegação-menu-mobile.abrir{
+    visibility: visible;
+    height: calc(100vh - 36px);
+}
+.nav-list-menu-mobile.abrir{
+    visibility: visible;
+
+}
+.paragrafos-cabeçalho{
+    text-align: start;
+    font-size: 12px;
+}
+
+
+
+
+
+}

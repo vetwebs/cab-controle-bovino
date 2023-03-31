@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: Inter-Regular;
-    src: url(fonte/Inter-Regular.ttf);
+    src: url(../fonte/Inter-Regular.ttf);
 }
 body{
     font-family: Inter-Regular;
