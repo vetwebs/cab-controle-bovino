@@ -9,5 +9,16 @@
     src: url(../fonte/Inter-SemiBold.ttf);
 }
 body{
-    
+    font-family: Inter-Regular;
+    background-color: rgb(189, 206, 186);
+}
+header{
+    margin: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(43, 133, 31);
+}
+/*Main*/
+main{
+    margin: 10px;
 }
