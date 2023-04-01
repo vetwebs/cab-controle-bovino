@@ -231,8 +231,9 @@ div, select{
         font-size: 12px;
         
     }
+    /*Configuração dos inputs do paragrafo*/
     .paragrafos-cabeçalho input{
-       margin: -8px;
+       margin: -5px;
        font-size: 12px;
       
     }
