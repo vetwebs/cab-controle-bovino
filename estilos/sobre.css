@@ -14,11 +14,44 @@ body{
 }
 header{
     margin: 10px;
-    font-size: 10px;
+    font-size: 20px;
     font-weight: bold;
     color: rgb(43, 133, 31);
 }
 /*Main*/
 main{
     margin: 10px;
+    font-size: 25px;
+}
+/*****Redes Sociais*/
+.container__redes-sociais{
+    display: flex;
+    justify-content: start;
+   
+}
+.container__redes-sociais img{
+    margin: 10px;
+    padding: 5px ;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.562);
+    border-radius: 10px;
+}
+.container__redes-sociais img:hover{
+    width: 35px;
+    box-shadow: 5px 5px 8px rgb(22, 83, 9);
+    
+}
+@media screen {
+    header{
+        font-size: 15px;}
+
+    main{
+            margin: 10px;
+            font-size: 20px;
+        }
+     .container__redes-sociais{
+            display: flex;
+            justify-content: center;
+           
+        }
+    
 }

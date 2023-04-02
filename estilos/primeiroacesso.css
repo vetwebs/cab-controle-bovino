@@ -14,14 +14,14 @@ body{
     padding:0px;
     
 }
+/*********Botão sobre*/
 header{
     margin: 20px 10px;
 }
 header nav a{
     font-family: Roboto;
     text-decoration: none;
-    border: 1px solid rgb(20, 95, 39);
-    background-color: rgb(16, 117, 42);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
     border-radius: 10px;
     padding: 8px;
     color: white;
@@ -29,11 +29,10 @@ header nav a{
 .navegação-sobre a:hover{
     color: #000000;
     font-weight: bold;
-    border: 1px solid rgb(253, 255, 254);
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.329);
 
 }
-/*Logo*/
+/**********Logo*/
 .principal__container{
     display: flex;
     flex-direction: column;
