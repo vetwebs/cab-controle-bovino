@@ -1,0 +1,121 @@
+body{
+    background-color: rgba(152, 192, 154, 0.712);
+}
+/*SESSÃO CONTEINER*/
+.sessão__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 10%;
+     
+}
+/******Direito*******/
+/*Div lado Direito*/
+.sessão-direito__container{
+    margin: 10px 10% 0 0;
+}
+.gmd__container input, .peso-atual__container input, .dieta__container input , .resumo-animais__container input{
+    background-color: transparent;
+    border: none;
+    color: rgb(8, 30, 77);
+    font-size: 18px;
+}
+/*Filtrar animais*/
+.filtrar-animais{
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 20%;
+    margin-bottom: 10px;
+    background-color:  rgb(183, 196, 183);
+    border-radius: 10px;
+}
+.filtrar-animais input{
+    font-size: 12px;
+
+}
+/*GMD*/
+.gmd__container{
+    background-color:  rgb(119, 173, 187);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+}
+
+/*Peso atual*/
+.peso-atual__container{
+    background-color:  rgb(155, 189, 155);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+/*Dieta atual*/
+.dieta__container{
+    display: flex;
+    align-items: center;
+    background-color:  rgb(150, 197, 150);
+    padding: 10px;
+    border-radius: 10px;
+}
+/******Esquerdo*******/
+/*Div lado Esquerdo*/
+.sessão-esquerdo__container{
+    background-color: rgba(219, 233, 221, 0.856);
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 5px auto;
+    padding: 50px;
+}
+/*Resumo animais*/
+.resumo-animais__container{
+    display: block;
+    justify-content: start;
+}
+/*pesos*/
+.pesos__container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*Botão*/
+.botão-voltar{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+.botão-voltar  button{
+    padding: 10px 5em;
+    font-size: 15px;
+    font-family: Inter-Regular;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: rgb(79, 194, 95);
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.308);
+    border: none;
+    cursor: pointer;
+}
+.botão-voltar  button:hover{
+    background-color: rgb(122, 158, 127);
+    color: white;
+
+}
+
+/*mobile*/
+
+@media screen and (max-width: 1000px) {
+.sessão__container, .sessão-direito__container{
+    margin-left: 0;
+     
+}
+
+
+
+
+
+}
