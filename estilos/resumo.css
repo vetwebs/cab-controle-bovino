@@ -10,16 +10,39 @@ body{
     margin-left: 10%;
      
 }
+.resumo-animais__container h3{
+    background-color: rgba(191, 209, 209, 0.459);
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(18, 119, 35);
+}
+/*IMAGEM PDF*/
+.imagem-pdf{
+    margin-top: -10%;
+    display: flex;
+    margin-left: 95%;
+}
+.imagem-pdf img{
+    background-color: rgba(226, 216, 202, 0.644);
+    padding: 7px;
+    border-radius: 10px;
+}
 /******Direito*******/
 /*Div lado Direito*/
 .sessão-direito__container{
     margin: 10px 10% 0 0;
 }
-.gmd__container input, .peso-atual__container input, .dieta__container input , .resumo-animais__container input{
+.gmd__container input, .peso-atual__container input, .dieta__container input , .resumo-animais__container input, .inputs_origens input{
     background-color: transparent;
     border: none;
     color: rgb(8, 30, 77);
     font-size: 18px;
+}
+/*Input origem*/
+.inputs_origens__container{
+    margin-top: 10px;
+    background-color: rgb(213, 213, 240);
+    border-radius: 20px;
 }
 /*Filtrar animais*/
 .filtrar-animais{
@@ -109,12 +132,67 @@ body{
 /*mobile*/
 
 @media screen and (max-width: 1000px) {
-.sessão__container, .sessão-direito__container{
+.sessão__container{
     margin-left: 0;
      
 }
+.sessão-direito__container{
+    margin-left: 7%;
+}
+/*RESUMO Animal*/
+.resumo-animais__container div input{
+    background-color: rgba(192, 207, 219, 0.342);
+}
 
+.resumo-animais__container h3{
+    background-color: rgb(180, 201, 201);
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(18, 119, 35);
+}
+.meses-input input{
+    width: 50px;
+}
+.raca-input input{
+    width: 100px;
+}
+/*ORIGEM*/
+.inputs_origens input{
+    background-color: rgba(194, 199, 202, 0.384);
+    text-align: center;
+}
+.inputs_origens-valor{
+    background-color: rgba(139, 153, 135, 0.384);
+    text-align: center;
+    font-size: 15px;
+}
+#valor-animal input{
+    background-color: rgba(164, 192, 156, 0.384);
+    text-align: center;
+    font-size: 18px;
 
+}
+/*GMD*/
+.gmd-resumo input{
+    width: 50px;
+    background-color: rgba(217, 217, 226, 0.13);
+
+}
+/*Font -Size dos pesos*/
+.peso--resumo input{
+    width: 50px;
+    color: rgb(9, 18, 94);
+    background-color: rgba(217, 217, 226, 0.267);
+}
+.data--resumo input{
+    font-size: 15px;
+}
+.dieta-resumo input{
+    width: 50%;
+    font-size: 17px;
+    background-color: rgba(206, 218, 208, 0.267);
+    text-align: center;
+}
 
 
 

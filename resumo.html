@@ -130,6 +130,9 @@
 <!-------Sessão lado esquerdo------>
 <section class="sessão__container">
     <div class="sessão-esquerdo__container">
+        <div class="imagem-pdf">
+            <a href="#"><img src="img/icone-pdf.png" alt=""></a>
+        </div>
 <!-----------------Resumo--------------->
         <div class="resumo-animais__container">
             <h3>Resumo</h3>
@@ -137,16 +140,15 @@
             <div class="resumo-animais">
                 <label for="">Nome do animal:</label><input type="text" name="" id="">
             </div>
-
             <div>
                 <label for="">Nº do animal:</label><input type="text" name="" id="">
             </div>
 
-            <div>
+            <div class="meses-input"> 
                 <label for="">Meses:</label><input type="text" name="" id="">
             </div>
 
-            <div>
+            <div class="raca-input">
                 <label for="">Raça:</label><input type="text" name="" id="">
             </div>
 
@@ -157,12 +159,41 @@
             <div>
                 <label for="">Mãe:</label><input type="text" name="" id="">
             </div>
+            <div>
+                <label for="">Nº:</label><input type="text" name="" id="">
+            </div>
 
             <div>
                 <label for="">Pai:</label><input type="text" name="" id="">
             </div>
+            <div>
+                <label for="">Nº:</label><input type="text" name="" id="">
+            </div>
+        </div>
+        <hr>
+<!--Informações de Origem-->
+        <div class="inputs_origens__container">
+            <div class="inputs_origens">
+                <label for="">Origem:</label><input type="text">
+            </div>
+            <div class="inputs_origens">
+                <label for="">Fornecedor:</label><input type="text">
+            </div>
+            <div class="inputs_origens">
+                <label for="">Cidade:</label><input type="text">
+            </div>
+            <div class="inputs_origens">
+                <label for="">UF:</label><input type="text">
+            </div>
+            <div class="inputs_origens">
+                <label for="">NF:</label><input type="text">
+            </div>
+            <div class="inputs_origens" id="valor-animal">
+                <label for="">R$:</label><input type="text">
+            </div>
         </div>
     </div>
+<!--Fim Informações de Origem-->
 <!-------Sessão lado esquerdo------>
     <!--Divisão container esquerdo-->
     <div class="sessão-direito__container">
@@ -170,10 +201,10 @@
         <div>
             <div class="gmd__container">
                 <h4>Ganhos Médios Diários</h4>
-                <div>
+                <div class="gmd-resumo">
                     <label for="">GMD:</label><input type="text">
                 </div>
-                <div>
+                <div class="gmd-resumo">
                     <label for="">Dias:</label><input type="text">
                 </div>
             </div>
@@ -181,19 +212,19 @@
 <!------------Peso Atual------------------>
         <div>
             <div class="peso-atual__container">
-                <div>
+                <div class="peso--resumo">
                     <label for="">Peso Inicial:</label><input type="text">
                 </div>
-                <div>
+                <div class="data--resumo">
                     <label for="">Data:</label><input type="text">
                 </div>
-                <div>
+                <div class="peso--resumo">
                     <label for="">Peso Atual:</label><input type="text">
                 </div>
-                <div>
+                <div class="data--resumo">
                     <label for="">Data:</label><input type="text">
                 </div>
-                <div>
+                <div class="peso--resumo">
                     <label for="">Carcaça:</label><input type="text">
                 </div>
             </div>
@@ -201,7 +232,7 @@
 <!------------Dieta atual------------------>
         <div>
             <div class="dieta__container">
-                <div>
+                <div class="dieta-resumo">
                     <label for="">Dieta atual:</label><input type="text">
                 </div>
                 <div>
