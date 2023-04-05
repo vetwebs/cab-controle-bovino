@@ -13,21 +13,25 @@
     <h4>Preencha os campos para prosseguir.</h4>
 <!-------FORMULÁRIO DE CADASTRO-------->
     <main>
-        <form>
-            <label for="proprietário">Proprietário</label>
+        <form id="form">
+<!--------------PROPRIETÁRIO (A)------>
+            <label for="proprietário">Proprietário (a)</label>
             <div>
-                <input type="text" name="form_nome_usuário" value="name
-                ">
+                <input type="text" id="proprietario">
             </div>
+<!-----------------FAZENDA----------->
             <label for="fazenda">Fazenda</label>
             <div>
-                <input type="text">
+                <input type="text" id="fazenda">
+            </div>
+<!-----------------Botão---->
+            <div class="botão-salvar-login">
+                <button type="submit" onclick="continuar(); return false">Continuar</button>
             </div>
         </form>
     </main>
-    <div class="botão-salvar-login">
-     <button><a href="cadastro.html">Salvar</a></button>
-    </div>
+    
+<!---------------SCRIPT-------->
     <script src="cadastro.js"></script>
 </body>
 </html>
