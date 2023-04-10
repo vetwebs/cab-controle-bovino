@@ -131,43 +131,43 @@
             <form>
                 <div class="div-nome-categoria">
                     <label for="nome-animal">Nome</label>
-                    <input type="text">
+                    <input type="text" id="nomeAnimalCadastro">
                     <label for="categoria">Categoria</label>
-                    <select name="categoria" class="ls-field-lg" id="categorias">
-                        <option value="vaca">Vaca</option>
-                        <option value="boi">Boi</option>
-                        <option value="bezerro">Bezerro</option>
-                        <option value="bezerra">Bezerra</option>
-                        <option value="garrote">Garrote</option>
-                        <option value="novilha">Novilha</option>
+                    <select name="categoria" class="ls-field-lg" id="categoriaAnimalCadastro">
+                        <option value="Vaca">Vaca</option>
+                        <option value="Boi">Boi</option>
+                        <option value="Bezerro">Bezerro</option>
+                        <option value="Bezerra">Bezerra</option>
+                        <option value="Garrote">Garrote</option>
+                        <option value="Novilha">Novilha</option>
                     </select>          
 <!------------------------Raça---------->                   
                         <label>Raça</label>
-                        <select name="Raça" class="ls-field-lg">
-                            <option value="sim">Angus</option>
-                            <option value="sim">Brahman</option>
-                            <option value="sim">Brangus</option>
-                            <option value="sim">Braford</option>
-                            <option value="sim">Caracu</option>
-                            <option value="sim">Charolês</option>
-                            <option value="sim">Nelore</option>
-                            <option value="nao">Guzerá</option>
-                            <option value="nao">Gir</option>
-                            <option value="nao">Girolando</option>
-                            <option value="nao">Holandês</option>
-                            <option value="nao">Jersey</option>
-                            <option value="nao">Red Angus</option>
-                            <option value="nao">Parto Suíço</option>
-                            <option value="nao">Sindi</option>
-                            <option value="nao">Girolando</option>
-                            <option value="nao">Senepol</option>
+                        <select name="Raça" class="ls-field-lg" id="racaAnimalCadastro">
+                            <option value="Angus">Angus</option>
+                            <option value="Brahman">Brahman</option>
+                            <option value="Brangus">Brangus</option>
+                            <option value="Braford">Braford</option>
+                            <option value="Caracu">Caracu</option>
+                            <option value="Charolês">Charolês</option>
+                            <option value="Nelore">Nelore</option>
+                            <option value="Guzerá">Guzerá</option>
+                            <option value="Gir">Gir</option>
+                            <option value="Girolando">Girolando</option>
+                            <option value="Holandês">Holandês</option>
+                            <option value="Jersey">Jersey</option>
+                            <option value="Red Angus">Red Angus</option>
+                            <option value="Pardo Suiço">Parto Suíço</option>
+                            <option value="Sindi">Sindi</option>
+                            <option value="Girolando">Girolando</option>
+                            <option value="Senepol">Senepol</option>
                         </select> 
 <!----------------------------Sexo---->  
                             <select name="sexo" class="ls-field-lg" id="sexo">
                                 <option value="femea" selected >Femea</option>
                                 <option value="macho">Macho</option>                      
 <!--------------------------Nº do animal---> 
-                              <input type="text" placeholder="Nº do animal">
+                              <input type="text" placeholder="Nº do animal" id="numeroAnimalCadastro">
 <!---------------------------Escore------->
                         <label>Escore</label>
                         <select name="escore" class="ls-field-lg">
@@ -177,11 +177,11 @@
                         </select>
 <!----------------------------Meses-->
                             <label>Meses</label>
-                            <input type="number" class="number">          
+                            <input type="number" class="number" id="mesesAnimalCadastro">          
 <!--------------------------Lote-->
                             <div>
                             <label>Lote</label>
-                            <input type="text">
+                            <input type="text" id="loteAnimalCadastro">
                         </div>     
                 </form>
             </div>      
@@ -235,64 +235,63 @@
     <!-------Mãe----------->
     <div>
         <label for="mãe">Mãe</label>
-        <input type="text">
-        <label for="mãe">Meses</label>
-        <input type="number">
-        <input type="text" placeholder="Nº do animal">
+        <input type="text" id="nomeMaeCadastro">
+        <input type="text" placeholder="Nº do animal" id="numeroMaeCadastro">
         <label>Raça</label>
-        <select name="Raça" class="ls-field-lg">
-            <option value="sim">Angus</option>
-            <option value="sim">Brahman</option>
-            <option value="sim">Brangus</option>
-            <option value="sim">Braford</option>
-            <option value="sim">Caracu</option>
-            <option value="sim">Charolês</option>
-            <option value="sim">Nelore</option>
-            <option value="nao">Guzerá</option>
-            <option value="nao">Gir</option>
-            <option value="nao">Girolando</option>
-            <option value="nao">Holandês</option>
-            <option value="nao">Jersey</option>
-            <option value="nao">Red Angus</option>
-            <option value="nao">Parto Suíço</option>
-            <option value="nao">Sindi</option>
-            <option value="nao">Girolando</option>
-            <option value="nao">Senepol</option>
+        <select name="Raça" class="ls-field-lg" id="racaMaeCadastro">
+            <option value="Angus">Angus</option>
+            <option value="Brahman">Brahman</option>
+            <option value="Brangus">Brangus</option>
+            <option value="Braford">Braford</option>
+            <option value="Caracu">Caracu</option>
+            <option value="Charolês">Charolês</option>
+            <option value="Nelore">Nelore</option>
+            <option value="Guzerá">Guzerá</option>
+            <option value="Gir">Gir</option>
+            <option value="Girolando">Girolando</option>
+            <option value="Holandês">Holandês</option>
+            <option value="Jersey">Jersey</option>
+            <option value="Red Angus">Red Angus</option>
+            <option value="Pardo Suiço">Pardo Suíço</option>
+            <option value="Sindi">Sindi</option>
+            <option value="Senepol">Senepol</option>
         </select>
+        <div>
         <label>Lote</label>
-        <input type="text">
+             <input type="text" id="loteMaeCadastro">
+        </div>
 </section>
 <!-----------Filiação------------->
 <section class="filiação_pai_container">
     <!-----------Pai------------->
     <div>
         <label for="pai">Pai</label>
-        <input type="text">
-        <label for="pai">Meses</label>
-        <input type="number">
-        <input type="text" placeholder="Nº do animal">
+        <input type="text" id="nomePaiCadastro">
+        
+        <input type="text" placeholder="Nº do animal" id="numeroPaiCadastro">
         <label>Raça</label>
-        <select name="Raça" class="ls-field-lg">
-            <option value="sim">Angus</option>
-            <option value="sim">Brahman</option>
-            <option value="sim">Brangus</option>
-            <option value="sim">Braford</option>
-            <option value="sim">Caracu</option>
-            <option value="sim">Charolês</option>
-            <option value="sim">Nelore</option>
-            <option value="sim">Guzerá</option>
-            <option value="sim">Gir</option>
-            <option value="sim">Girolando</option>
-            <option value="sim">Holandês</option>
-            <option value="sim">Jersey</option>
-            <option value="sim">Red Angus</option>
-            <option value="sim">Parto Suíço</option>
-            <option value="sim">Sindi</option>
-            <option value="sim">Girolando</option>
-            <option value="sim">Senepol</option>
+        <select name="Raça" class="ls-field-lg" id="racaPaiCadastro">
+            <option value="Angus">Angus</option>
+            <option value="Brahman">Brahman</option>
+            <option value="Brangus">Brangus</option>
+            <option value="Braford">Braford</option>
+            <option value="Caracu">Caracu</option>
+            <option value="Charolês">Charolês</option>
+            <option value="Nelore">Nelore</option>
+            <option value="Guzerá">Guzerá</option>
+            <option value="Gir">Gir</option>
+            <option value="Girolando">Girolando</option>
+            <option value="Holandês">Holandês</option>
+            <option value="Jersey">Jersey</option>
+            <option value="Red Angus">Red Angus</option>
+            <option value="Pardo Suiço">Pardo Suíço</option>
+            <option value="Sindi">Sindi</option>
+            <option value="Senepol">Senepol</option>
         </select>
-        <label>Lote</label>
-        <input type="text">
+        <div>
+            <label>Lote</label>
+            <input type="text" id="lotePaiCadastro">
+        </div>
 </section>
 <!---------Botões Finais------------->
 <div class="botões">

@@ -41,22 +41,21 @@ body{
 /*Input origem*/
 .inputs_origens__container{
     margin-top: 10px;
-    background-color: rgb(213, 213, 240);
+    background-color: rgb(179, 179, 253);
     border-radius: 20px;
+    
 }
-/*Filtrar animais*/
-.filtrar-animais{
-    display: inline-block;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px 20%;
-    margin-bottom: 10px;
-    background-color:  rgb(183, 196, 183);
+.container__filiação{
+    background-color: rgb(192, 208, 221);
     border-radius: 10px;
+    margin: 5px;
 }
-.filtrar-animais input{
-    font-size: 12px;
-
+.container_informaçoes_div-mae,.container_informaçoes_div-pai{
+    margin: 0 0 0 -40px;
+    font-size: 14px;
+}
+.container_informaçoes_div-mae input, .container_informaçoes_div-pai input{
+    font-size: 14px;
 }
 /*GMD*/
 .gmd__container{
@@ -192,7 +191,12 @@ body{
     background-color: rgba(206, 218, 208, 0.267);
     text-align: center;
 }
-
-
+.container_informaçoes_div-mae,.container_informaçoes_div-pai{
+    margin: 0 10px;
+   
+}
+#nomeMaeResumo, #numeroMaeResumo, #nomePaiResumo, .numeroPaiResumo{
+    background-color: rgba(175, 192, 207, 0.575);
+}
 
 }
