@@ -2,27 +2,19 @@
 function mostra(){
     document.getElementById('informacoes').style.display = 'flex';
 }
-//Validação de Cadastro da página login.html
-const formulario = document.querySelector('#form')
-const proprietarioInput = document.querySelector('#proprietario')
-const fazendaInput = document.querySelector('#fazenda')
+//Receber as informações nos campos proprietário e fazenda na pagina cadastro.html
+const inputNome = document.getElementById('nome');
+const inputFazenda = document.getElementById('fazenda');
 
+const nome = localStorage.getItem('nome');
+const fazenda = localStorage.getItem('fazenda');
 
-formulario.addEventListener("submit", (event) =>{
-    event.preventDefault();
+if (nome) {
+  inputNome.value = nome;
+}
 
-//verificar se o nome está vazio
-    if(proprietarioInput.value ==""){
-        alert('Preencha o campo Proprietário (a).');
-        return;
-    }
-//Verificar se o nome da fazenda está preenchida
-    if(fazendaInput.value==""){
-        alert('Preencha o campo fazenda.');
-        return;
-    }
-//Todos os campos estiverem preenchidos continue
-    formulario.submit();
-    return false;
-})
+if (fazenda) {
+  inputFazenda.value = fazenda;
+}
 
+//Capturando as informações preenchidas do cadastro.html para os inputs resumo.html

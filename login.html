@@ -15,9 +15,9 @@
     <main>
         <form id="form">
 <!--------------PROPRIETÁRIO (A)------>
-            <label for="proprietário">Proprietário (a)</label>
+            <label for="nome">Proprietário (a)</label>
             <div>
-                <input type="text" id="proprietario">
+                <input type="text" id="nome">
             </div>
 <!-----------------FAZENDA----------->
             <label for="fazenda">Fazenda</label>
@@ -26,12 +26,27 @@
             </div>
 <!-----------------Botão---->
             <div class="botão-salvar-login">
-                <button type="submit" onclick="continuar(); return false">Continuar</button>
+                <a href="cadastro.html">Continuar</a>
             </div>
         </form>
     </main>
     
-<!---------------SCRIPT-------->
-    <script src="cadastro.js"></script>
+<!--------------------SCRIPT-------------->
+    <script>
+//Captura das informações nos Campos Proprietário e Fazenda
+const inputNome = document.getElementById('nome');
+const inputFazenda = document.getElementById('fazenda');
+    
+    inputNome.addEventListener('input', (event) => {
+      localStorage.setItem('nome', event.target.value);
+    });
+    
+    inputFazenda.addEventListener('input', (event) => {
+      localStorage.setItem('fazenda', event.target.value);
+    });
+</script>
+    
+        
+    
 </body>
 </html>
